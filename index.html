@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images/HKLF.png" />
+    <title>HKLF Group</title>
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <script src="js/script.js"></script>
+</head>
+<body class="BGcolor-brokenWhite h-100 accueilBackground">
+
+<div class="content">
+    <header class="BGcolor-evenLighterGrey">
+        <div class="row w-100"  >
+            <div class="col-1"></div>
+            <div class="col-3 p-0 my-3">
+                <a class="m-3" href="index.html">
+                    <img style="height: 3rem" src="images/HKLF.png" alt="logo HKLF" onclick="eba_visibilite(''); return false;">
+                </a>
+            </div>
+            <div class="col p-0"></div>
+            <div class="col p-0"></div>
+            <div class="col-4 p-0">
+                <div class="row h-100">
+                    <div class="col m-auto">
+                        <a class="font-1 Tcolor-black effect-shine" href="" onclick="eba_visibilite('about'); return false;">About</a>
+                    </div>
+                    <div class="col m-auto">
+                        <a class="font-1 Tcolor-black effect-shine" href="" onclick="eba_visibilite('music'); return false;">Music</a>
+                    </div>
+                    <div class="col m-auto">
+                        <a class="font-1 Tcolor-black effect-shine" href="" onclick="eba_visibilite('contact'); return false;">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col p-0"></div>
+        </div>
+    </header>
+
+    <div id="Hexakill" class="eba-visibilite-Element" style="display: none">
+        <div class="mx-auto d-flex">
+            <img style="width: 70rem; margin: auto" src="images/hexakill.png" alt="logo hexakill en blanc">
+        </div>
+    </div>
+    <div id="about" class="eba-visibilite-Element hklfmorphism" style="display: none">
+        <div eba-directive="html/About.html"></div>
+    </div>
+    <div id="music" class="eba-visibilite-Element hklfmorphism" style="display: none">
+        <div eba-directive="html/Music.html"></div>
+    </div>
+    <div id="contact" class="eba-visibilite-Element hklfmorphism" style="display: none">
+        <div eba-directive="html/Contact.html"></div>
+    </div>
+
+    <script>
+        Eba_Directive();/*sert a charger les pages html en directives au démarages*/
+    </script>
+</div>
+
+</body>
+</html>
